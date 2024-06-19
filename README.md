@@ -10,11 +10,30 @@ This assignment aims to familiarize you with the tools and configurations necess
 
 #Tasks:
 
-1. Select Your Operating System (OS):
-   Choose an operating system that best suits your preferences and project requirements. Download and Install Windows 11. https://www.microsoft.com/software-download/windows11
+**1. Select Your Operating System (OS):**
+  ** Choose an operating system that best suits your preferences and project requirements. Download and Install Windows 11. https://www.microsoft.com/software-download/windows11**
 
-2. Install a Text Editor or Integrated Development Environment (IDE):
-   Select and install a text editor or IDE suitable for your programming languages and workflow. Download and Install Visual Studio Code. https://code.visualstudio.com/Download
+Download windows 11 from the windows download page
+
+Agree to the terms and choose Accept. Let the Setup tool run, and choose the recommended options for this PC. Click Next, and choose USB flash drive.
+
+Choose your USB flash drive from the list and then click Next. You'll be prompted and Windows 11 will download to it. Once finished, the installer will switch to Creating  Installation media. You'll know when it's finished, as you'll get a prompt that the drive is ready.
+
+Once your USB drive is ready, close the installer with the Finish button. Keep the USB drive plugged into your PC.
+
+Restart your PC
+
+In the pop-up prompt, choose Use a device. Your USB drive should appear listed. Choose it, and Windows will restart to your USB drive and Windows 11 installer. If you don't see this option, you'll need to head into your BIOS or UEFI to manually boot from the USB drive. Usually, you can do this by pressing F12 on boot as soon as you turn on your PC. 
+
+Once in the Windows 11 installer, select a language, and click Next. 
+
+Choose the Custom option and choose the drive to install Windows 11 on. You might have to click the Format button to erase all your files on the drive. When done, select the drive again and click Next.
+
+Windows 11 will install to your PC, and you can sit back. You'll then be taken to the out-of-box experience, and will be prompted to set up your PC again.
+
+**2. Install a Text Editor or Integrated Development Environment (IDE):**
+   **Select and install a text editor or IDE suitable for your programming languages and workflow. Download and Install Visual Studio Code. https://code.visualstudio.com/Download**
+
 3. Set Up Version Control System:
    Install Git and configure it on your local machine. Create a GitHub account for hosting your repositories. Initialize a Git repository for your project and make your first commit. https://github.com
 
