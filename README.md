@@ -34,20 +34,94 @@ Windows 11 will install to your PC, and you can sit back. You'll then be taken t
 **2. Install a Text Editor or Integrated Development Environment (IDE):**
    **Select and install a text editor or IDE suitable for your programming languages and workflow. Download and Install Visual Studio Code. https://code.visualstudio.com/Download**
 
-3. Set Up Version Control System:
-   Install Git and configure it on your local machine. Create a GitHub account for hosting your repositories. Initialize a Git repository for your project and make your first commit. https://github.com
+Go to the visual studio download page. Select your OS then click on it to download.
 
-4. Install Necessary Programming Languages and Runtimes:
-  Instal Python from http://wwww.python.org programming language required for your project and install their respective compilers, interpreters, or runtimes. Ensure you have the necessary tools to build and execute your code.
+For Linux, download the .deb package 64-bit 
 
-5. Install Package Managers:
-   If applicable, install package managers like pip (Python).
+After the download, open your terminal and type the following:
 
-6. Configure a Database (MySQL):
-   Download and install MySQL database. https://dev.mysql.com/downloads/windows/installer/5.7.html
+sudo apt install ./<file name>.deb
 
-7. Set Up Development Environments and Virtualization (Optional):
-   Consider using virtualization tools like Docker or virtual machines to isolate project dependencies and ensure consistent environments across different machines.
+If you're on an older Linux distribution, you will need to run this instead:
+
+sudo dpkg -i <file>.deb
+
+sudo apt-get install -f # Install dependencies
+
+![Alt](images/vs.png)
+
+**3. Set Up Version Control System:**
+
+   **Install Git and configure it on your local machine. Create a GitHub account for hosting your repositories. Initialize a Git repository for your project and make your first commit. https://github.com**
+From your shell, install Git using apt-get:
+
+$ sudo apt-get update
+$ sudo apt-get install git
+
+Verify the installation was successful by typing git --version:
+
+$ git –version
+
+![Alt](images/git.png)
+
+Configure your Git username and email using the following commands, replacing John’s name with your own. These details will be associated with any commits that you create:
+
+$ git config --global user.name "John Peter"
+$ git config --global user.email "jpeter@gmail.com"
+
+Initialize git using
+$ git init 
+
+**4. Install Necessary Programming Languages and Runtimes:**
+ ** Instal Python from http://wwww.python.org programming language required for your project and install their respective compilers, interpreters, or runtimes. Ensure you have the necessary tools to build and execute your code.**
+
+Open the shell and type
+
+$  sudo apt update
+
+Then type the following on the terminal
+
+sudo apt install python[version number]
+
+![Alt](images/python.png)
+
+**5. Install Package Managers:**
+   **If applicable, install package managers like pip (Python).**
+
+Open Linux Terminal.
+
+Update the current package using 
+
+$ sudo apt update
+ 
+Install PIP on Ubuntu using the command 
+
+$ sudo apt install python3-pip.
+
+![Alt](images/pip.png)
+
+**6. Configure a Database (MySQL): **
+   **Download and install MySQL database. https://dev.mysql.com/downloads/windows/installer/5.7.html**
+
+To install MySQL, run the following command from a terminal prompt:
+
+$ sudo apt install mysql-server
+
+![Alt](images/mysqlv)
+
+Once the installation is complete, the MySQL server should be started automatically. You can quickly check its current status via system:
+
+$ sudo service mysql status
+
+![Alt](images/mysqlservice.png)
+
+To check the network status run:
+
+$ sudo ss -tap | grep mysql
+
+![Alt](images/mysqlnet.png)
+**7. Set Up Development Environments and Virtualization (Optional):**
+  ** Consider using virtualization tools like Docker or virtual machines to isolate project dependencies and ensure consistent environments across different machines.**
 
 8. Explore Extensions and Plugins:
    Explore available extensions, plugins, and add-ons for your chosen text editor or IDE to enhance functionality, such as syntax highlighting, linting, code formatting, and version control integration.
